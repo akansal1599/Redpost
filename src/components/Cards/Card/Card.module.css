@@ -1,0 +1,56 @@
+.Card {
+    border: 1px solid black;
+    display: flex;
+    margin: 2%;
+    flex-basis: 25%;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    flex-flow: column;
+    width: 32%;
+    padding: 0.15rem;
+}
+
+.Card:nth-child(3n+1) { order: 1; }
+.Card:nth-child(3n+2) { order: 2; }
+.Card:nth-child(3n)   { order: 3; }
+
+.CardBody {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem;
+}
+
+.Title {
+    margin-bottom: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.Button {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid #007bff;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    border-radius: .25rem;
+
+
+    color: #fff;
+    background-color: #007bff;
+
+}
+
+@media (max-width: 800px){
+    .Card {
+        flex-basis: 40%;
+    }
+}
+@media (max-width: 450px){
+    .Card {
+        flex-basis: 50%;
+    }
+}
